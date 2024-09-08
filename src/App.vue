@@ -1,30 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <RouterView />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-nav {
-  padding: 30px;
+@font-face {
+    font-family: Manrope;
+    src: url(assets/fonts/Manrope/Manrope-VariableFont_wght.ttf);
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+    font-family: Manrope;
 }
 </style>
