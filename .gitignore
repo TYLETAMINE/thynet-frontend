@@ -2,14 +2,6 @@
 node_modules
 /dist
 
-src/components/Authentication
-src/components/Profile
-src/components/Sidebar
-
-src/views/AuthView.vue
-src/views/ProfileView.vue
-
-
 # local env files
 .env.local
 .env.*.local
