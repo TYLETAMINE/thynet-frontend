@@ -1,0 +1,183 @@
+:root {
+    --inset_border-radius: 25px;
+    --active_color_item: green;
+}
+
+.sidebar__nav {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    height: min-content;
+    background-color: white;
+    // background-color: var(--active_color_item);
+
+    padding: 35px;
+    border-radius: var(--inset_border-radius);
+    box-shadow: 0 0 10px 2px rgb(230, 230, 230);
+
+    .sidebar__logo {
+        font-size: 18px;
+        font-weight: 600;
+
+        letter-spacing: 1px;
+    }
+
+    .horizont-line {
+        width: 100%;
+        display: grid;
+
+        .line {
+            border-radius: 2px;
+            border: 1px solid rgb(235, 235, 235);
+        }
+    }
+
+    .nav__list_items {
+        display: grid;
+        grid-gap: 20px;
+        list-style: none;
+
+        .router-link {
+            display: grid;
+            grid-gap: 10px;
+            align-items: center;
+            text-decoration: none;
+            grid-template-columns: min-content auto;
+
+            .icon {
+                width: 34px;
+                height: 34px;
+
+                display: grid;
+                place-items: center;
+
+                border-radius: 8px;
+                box-shadow: 0 2px 5px 0 rgb(225, 225, 225);
+
+                .svg-icon {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+        }
+
+        .inactive {
+
+            .icon {
+                fill: rgb(130, 130, 130);
+                background-color: rgb(240, 240, 240);
+            }
+
+            .title {
+                color: rgb(180, 180, 180);
+            }
+        }
+
+        .active {
+
+            .icon {
+                fill: white;
+                background-color: green;
+            }
+
+            .title {
+                font-weight: 550;
+                color: rgb(90, 90, 90);
+            }
+        }
+
+        .list__acc-settings {
+            font-size: 14px;
+            font-weight: 590;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: rgb(170, 170, 170);
+        }
+    }
+
+    .nav__recent-messages {
+        display: grid;
+        grid-gap: 10px;
+
+        .recent-messages__title {
+            font-size: 14px;
+            font-weight: 590;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: rgb(170, 170, 170);
+        }
+
+        .recent-messages__list {
+            display: grid;
+            grid-gap: 13px;
+            list-style: none;
+
+            .item {
+                
+                .router-link {
+                    display: grid;
+                    grid-gap: 10px;
+                    align-items: center;
+                    text-decoration: none;
+                    color: rgb(180, 180, 180);
+                    grid-template-columns: max-content auto max-content;
+
+                    .item__icon {
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 32px;
+
+                        display: grid;
+                        place-content: end;
+
+                        .status {
+                            width: 11px;
+                            height: 11px;
+                            border-radius: 99px;
+                            
+                            position: relative;
+                            background-color: gray;
+                        }
+
+                        .online {
+                            background-color: green;
+                        }
+
+                        .offline {
+                            background-color: rgb(170, 170, 170);
+                        }
+                    }
+
+                    .first-item__icon {
+                        background: url(/src/assets/images/5f3Zn1h5l4c.jpg);
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    
+                    .second-item__icon {
+                        background: url(/src/assets/images/qy4PrYAr1pU.jpg);
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .third-item__icon {
+                        background: url(/src/assets/svg/star-fill.svg);
+                        background-color: green;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+
+                    .item__counter {
+                        font-size: 14px;
+                        width: fit-content;
+                        padding: 2px 7px 2px 7px;
+
+                        display: grid;
+                        border-radius: 5px;
+                        background-color: rgb(240, 240, 240);
+                    }
+                }
+            }
+        }
+    }
+}

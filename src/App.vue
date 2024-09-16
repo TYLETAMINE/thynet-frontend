@@ -8,9 +8,8 @@
     src: url(assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-@font-face {
-    font-family: Manrope;
-    src: url(assets/fonts/Manrope/Manrope-VariableFont_wght.ttf);
+:root {
+    --body__background: rgb(250, 250, 250);
 }
 
 * {
@@ -18,6 +17,17 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: Manrope;
+    font-family: Montserrat;
+
+    body {
+        background-color: var(--body__background);
+
+        .wrapper {
+            padding: 15px;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 21.5% auto;
+        }
+    }
 }
 </style>

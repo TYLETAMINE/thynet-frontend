@@ -1,0 +1,259 @@
+.main__sign-up {
+    width: 100vw;
+    height: 100svh;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    background-color: rgb(250, 250, 250);
+
+    .sign-up__contain {
+        width: 80%;
+        height: 80%;
+
+        display: grid;
+        grid-template-columns: 35% 65%;
+
+        .contain__left {
+            background: url(/src/assets/images/backgroundAuth.jpg);
+
+            background-size: cover;
+            background-position: -14px;
+            background-repeat: no-repeat;
+
+            border-radius: 30px 0 0 30px;
+            box-shadow: 0px 0px 30px 2px rgb(88, 88, 88);
+        }
+
+        .contain__right {
+            background-color: white;
+            border-radius: 0 30px 30px 0;
+            box-shadow: 0px 0px 30px 2px rgb(88, 88, 88);
+
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+            .right__content {
+                width: 80%;
+                height: 80%;
+
+                .content__nav-list {
+                    width: max-content;
+                    margin-bottom: 25px;
+
+                    .list-of-num {
+                        list-style: none;
+
+                        display: grid;
+                        grid-gap: 25px;
+                        grid-template-columns: repeat(3, auto);
+
+                        .step {
+                            width: max-content;
+
+                            display: grid;
+                            grid-gap: 10px;
+                            align-items: center;
+                            grid-template-columns: repeat(2, auto);
+
+                            .step__block {
+                                width: 30px;
+                                height: 30px;
+
+                                display: grid;
+                                align-items: center;
+                                justify-items: center;
+
+                                color: gray;
+                                font-size: 0.9rem;
+                                background-color: rgb(235, 235, 235);
+
+                                border-radius: 7px;
+                            }
+
+                            .title__block {
+                                color: gray;
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .active {
+
+                            .step__block {
+                                color: white;
+                                background-color: green;
+                            }
+
+                            .title__block {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
+                .horizontal-line__block {
+
+                    .horizontal-line {
+                        border: 1px solid rgb(235, 235, 235);
+                    }
+                }
+
+                .content__step-counter {
+                    color: gray;
+                    font-size: 0.9rem;
+                    margin: 25px 0 12px;
+                }
+
+                // Step 1
+                .number_sign-up__preform {
+                    height: 41svh;
+                    display: grid;
+
+                    grid-template-rows: max-content auto;
+
+                    .preform__title {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+
+                    .number__form {
+                        display: grid;
+                        grid-gap: 25px;
+                        align-content: center;
+                        justify-content: center;
+
+                        .number__form-input {
+                            display: grid;
+                            justify-content: center;
+
+                            .input__number {
+                                outline: none;
+                                padding: 9px 11px;
+                                font-size: 0.9rem;
+                                border-radius: 10px;
+                                caret-color: green;
+                                border: 2px solid rgb(235, 235, 235);
+
+                                &:focus {
+                                    border-color: green;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Step 2
+                .sign-up__preform {
+                    height: 41svh;
+                    display: none;
+
+                    grid-template-rows: max-content auto;
+
+                    .preform__title {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                    }
+
+                    .sign-up__form {
+                        display: grid;
+                        align-items: center;
+                        justify-content: center;
+
+                        .sign-up__inputs {
+                            display: grid;
+                            grid-gap: 20px;
+                            grid-template-rows: min-content min-content;
+
+                            .inputs__block {
+                                display: grid;
+                                grid-gap: 20px;
+                                grid-template-rows: min-content min-content;
+                                grid-template-columns: min-content min-content;
+
+                                .block {
+                                    font-size: 12px;
+                                    color: rgb(88, 88, 88);
+
+                                    .input {
+                                        display: grid;
+
+                                        outline: none;
+                                        font-size: 14px;
+                                        border-radius: 10px;
+                                        border: 2px solid rgb(235, 235, 235);
+
+                                        padding: 10px 15px;
+                                    }
+
+                                    .input:focus {
+                                        border-color: green;
+                                    }
+
+                                    .dateofbirth_block-input {
+                                        appearance: none;
+                                        -webkit-appearance: none;
+
+                                        width: 100%;
+                                        display: grid;
+                                    }
+
+                                    .dateofbirth_block-input::-webkit-datetime-edit-text {
+                                        color: rgba(0, 128, 0, 0.5);
+                                    }
+                                }
+                            }
+
+                            .address_block {
+                                font-size: 12px;
+                                color: rgb(88, 88, 88);
+
+                                .input {
+                                    width: 100%;
+                                    display: grid;
+
+                                    outline: none;
+                                    font-size: 14px;
+                                    border-radius: 10px;
+                                    border: 2px solid rgb(235, 235, 235);
+
+                                    padding: 10px 15px;
+                                }
+
+                                .input:focus {
+                                    border-color: green;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .next-step__button_block {
+                    display: grid;
+                    margin-top: 20px;
+                    justify-content: end;
+
+                    .next-step {
+                        cursor: pointer;
+
+                        border: none;
+                        outline: none;
+                        color: white;
+                        font-size: 12px;
+                        font-weight: 500;
+                        padding: 15px 25px;
+                        border-radius: 10px;
+                        background-color: green;
+
+                        .linkStep {
+                            text-decoration: none;
+                            color: white;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
