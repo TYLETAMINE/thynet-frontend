@@ -1,3 +1,2 @@
-<template>
-    <h1>Friends</h1>
-</template>
+<template src="./index.html"></template>
+<style lang="scss" src="./style.scss"></style>

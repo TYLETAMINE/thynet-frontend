@@ -28,6 +28,6 @@ export default ({
     width: 100%;
     display: grid;
     grid-gap: 15px;
-    grid-template-columns: 60% calc(40% - 15px);
+    grid-template-columns: 60% auto;
 }
 </style>
